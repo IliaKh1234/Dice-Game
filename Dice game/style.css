@@ -1,0 +1,116 @@
+html, body { 
+    --color-1: #a8e6cf;
+    --color-2: #dcedc1; 
+    --color-3: #ffd3b6; 
+    --color-4: #ffaaa5; 
+    --color-5: #ff8b94;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding-top: 50px;
+    background: rgb(126,0,147);
+    background: linear-gradient(90deg, rgba(126,0,147,1) 17%, rgba(218,47,17,1) 100%);
+    font-family: 'Roboto', sans-serif;
+
+    color: black;
+
+}
+
+.container {
+    width: 400px;
+    text-align: center;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.534);
+    box-shadow: -2px 6px 18px 3px rgba(0,0,0,0.75);
+    padding: 50px;
+}
+
+.players {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.dice {
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+    background: rgb(126,0,147);
+    background: linear-gradient(90deg, rgba(126,0,147,1) 17%, rgba(218,47,17,1) 100%);
+    color: white;
+    margin: 0 auto;
+    font-size: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+button {
+    padding: 20px 30px;
+    font-size: 20px;
+    margin-top: 40px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: auto;
+    background: rgb(126,0,147);
+    background: linear-gradient(90deg, rgba(126,0,147,1) 17%, rgba(218,47,17,1) 100%);
+    color: white;
+    font-weight: 800;
+}
+
+#rollBtn {
+    background-color: var(--color-5);
+    margin-top: 40px;
+}
+
+#resetBtn {
+    background-color: var(--color-4);
+}
+
+button:focus {
+    outline: none;
+}
+
+#resetBtn {
+    margin-top: 40px;
+    display: none;
+}
+
+.active {
+    box-shadow: -2px 6px 18px 3px rgba(0,0,0,0.75);
+}
+h1,span,p{
+    color: rgb(126,0,147);
+}
+.names{
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 1px solid rgb(255, 255, 255);
+    margin-top: 40px;
+    padding: 30px 20px 10px ;
+    color: white;
+    font-weight: 800;
+}
+.names div{
+    margin-top: 20px;
+}
+.names input{
+    padding: 5px 10px;
+}
+#submit{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 10px 50px;
+    transition: 0.3s all ease-in-out;
+    border: 1px solid black;
+}
+#submit:hover{
+    background: none;
+}
